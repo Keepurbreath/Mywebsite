@@ -45,6 +45,18 @@
 
 <div id="Tab1" class="tabcontent">
     <p>LeBron James is one of the greatest basketball player all time.</p>
+    <audio id="background-audio" src="./A.mp3" loop></audio>
+     <script>
+        var audio = document.getElementById("background-audio");
+
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
      <img src="./LBJ.jpg" alt="LBJ" style="width:1080px;height:1080px">
 </div>
 
@@ -61,21 +73,11 @@
             </div>
         </div>
     </div>
-    <audio id="background-audio" src="./E.mp3" loop></audio>
+    
     <div style="text-align: center; margin-top: 20px;">
         <button onclick="toggleAudio()">Play Background Music</button>
     </div>
-    <script>
-        var audio = document.getElementById("background-audio");
-
-        function toggleAudio() {
-            if (audio.paused) {
-                audio.play();
-            } else {
-                audio.pause();
-            }
-        }
-    </script>
+   
 </div>
 
 <script>
